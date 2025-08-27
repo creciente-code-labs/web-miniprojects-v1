@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tasks LocalStorage</h1>
+
+        <div class="mini-menu">
+            <div class="timer">
+                    <!-- Timer here is better, we can use this to set time and complete a task like a reference -->
+                    
+                    <!-- Need a clock interative to set time in seconds, minutes, hours -->
+
+                    <div class="clock">
+                        <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="start-timer">Start</button>
+                        <button class="stop-timer">Stop</button>
+                    </div>
+            </div>
+
+            <form class="switch">
+                <label class="content">
+                    <input name="theme" class="div-switch" type="checkbox" >
+                </label>
+
+            </form>
+        </div>
+        
+    </header>
+
+    
+
+    <main>
+        <section class="create-task">
+            <h2>Create Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="New task..." required>
+                <button class="button-task" type="submit">Add Task</button>
+            </form>
+        </section>
+        <section class="section-tasks">
+
+            <h2>List Tasks</h2>
+            <!-- List tasks from js archive, it's dynamic -->
+            <section class="list-tasks"></section>
+            <section class="task-details">
+                <div class="close">X</div>
+                <h2 class="title-card">Task Details</h2>
+                <p class="name"></p>
+                <p class="date"> </p>
+                <p class="status"> </p>
+                <p class="time"> </p>   
+
+             </section>
+            
+        </section>
+        <!-- <section class="task-details">
+            as modal
+        </section> -->
+    </main>
+
+</body>
+</html>
